@@ -1,0 +1,1271 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+  <link rel="icon" href="images/thu_low_icon.png">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z22FG1EKD8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-Z22FG1EKD8');
+  </script>
+  <script>
+    function showMoreRows() {
+      const hiddenRows = document.getElementsByClassName("hidden-row");
+      const button = document.getElementsByTagName("button")[0];
+      const icon = button.querySelector("i");
+
+      // Toggle visibility of hidden rows
+      for (let i = 0; i < hiddenRows.length; i++) {
+        hiddenRows[i].classList.toggle("visible-row"); 
+      }
+
+      // Update the button icon
+      if (hiddenRows.length > 0 && hiddenRows[0].classList.contains("visible-row")) {
+        icon.classList.remove("fa-circle-chevron-down");
+        icon.classList.add("fa-circle-chevron-up");
+      } else {
+        icon.classList.remove("fa-circle-chevron-up");
+        icon.classList.add("fa-circle-chevron-down");
+      }
+    }
+  </script>
+
+  <!-- our project needs Font Awesome -->
+  <link href="assets/css/fontawesome.css" rel="stylesheet" />
+  <link href="assets/css/brands.css" rel="stylesheet" />
+  <link href="assets/css/solid.css" rel="stylesheet" />
+  <!-- <script src="https://kit.fontawesome.com/1f08730ab9.js" crossorigin="anonymous"></script> -->
+  <!-- <style> 
+    .divcss7{width:30%; height:30%;overflow:hidden} 
+    .divcss7 img{max-width:30%;_width:expression(this.width > 300 ? "300px" : this.width);} 
+    </style>  -->
+  <title>Xiaoyu QIN</title>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z22FG1EKD8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-Z22FG1EKD8');
+  </script>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <style type="text/css">
+    .custom-button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 20px; /* Set the desired font size here */
+      padding: 0;
+      color: #000000; /* Change the color to your desired color */
+    }
+
+    /* Optional: Add hover effect */
+    .custom-button:hover {
+      color: #0056b3; /* Change the color to your desired hover color */
+    }
+
+    .hidden-row {
+      display: none;
+    }
+  
+    .visible-row {
+      display: table-row;
+    }
+    .wrap {
+        display:inline;
+        margin:0px;
+        padding:0px;
+        width:auto;
+        height:auto;
+        position:relative;
+        background-color:rgb(108, 108, 108);
+        border-radius:100%;
+        
+    }
+    
+    .help-tip {
+      display:inline;
+        width:24px;
+        height:24px;
+        line-height:24px;
+        text-align:center;
+        border-radius:50%;
+        position:relative;
+        cursor:help;
+    }
+    .help-tip:before {
+        text-align: center;
+        content:" i";
+        padding:3.5px;
+        font-size:100%;
+        font:bold;
+        white-space: pre;
+        color:rgb(255, 255, 255);
+    }
+    .help-tip p {
+        display:none;
+        text-align:center;
+        padding: 2px;
+        line-height: 120%;
+        font-size: 90%;
+        background-color:rgb(108, 108, 108);
+        color:rgb(255, 255, 255);
+        float:initial;
+        width:250px;
+        position:absolute;
+        border-radius:2px;
+        z-index: 100;
+    }
+    .help-tip:hover p {
+        display:block;
+        animation:fadein 0.5s;
+    }
+    @keyframes fadein {
+        0% {
+          opacity:0;
+        }
+        100% {
+          opacity:100%;
+        }
+    }
+		.image-container {
+			position: relative;
+			display: inline;
+      cursor: pointer;
+		}
+		.image {
+			position: absolute;
+			top: 100%;
+			display: none;
+      border:2px solid rgb(100, 100, 100);
+      background-color: rgba(235, 235, 235, 0.925);
+      z-index: 101;
+		}
+		.text:hover + .image {
+      top: 65px;
+      left: 0px;
+      width: 473px;
+			display: inline;
+		}
+
+    </style>
+  <style>
+    body{
+      background-image: url("images/background.jpg"); 
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    .div-all{
+      border:2px solid rgb(0, 0, 0);
+      background-color: rgba(243, 243, 243, 0.7);
+      margin-left: 40px;
+      margin-right: 40px;
+      margin-top:50px; 
+      margin-bottom: 30px; 
+      max-width: 650px;
+      line-height: 150%;
+    }
+    .div-out{
+      margin-left: 30px;
+      margin-right: 30px;
+      margin-top:30px; 
+      margin-bottom: 30px; 
+      max-width: 650px;
+    }
+    .div-sect{
+      margin-left: 15px;
+      margin-right: 15px;
+      margin-top:15px; 
+      margin-bottom: 15px; 
+    }
+  </style>
+
+</head>
+
+<body>
+    <div class="div-all">
+    <div class="div-sect" id="top">
+      <a href="#s_cont">
+        <font size="6" face="serif"><strong>Xiaoyu QIN</strong></font>
+      </a>
+      &nbsp;&nbsp;&nbsp;<img class="picture" src="images/xiaoyu_cn_name_it.png" style="position:relative;top:3px" height="10%" width="12.5%">
+    </div>
+
+    <div class="div-out">
+
+    </div>
+
+
+
+    <div class="div-sect">
+      <section>
+        <h1><i class="fa-solid fa-face-smile-wink"></i> Brief&nbsp;</h1>
+        <a href="images/xiaoyu_qin_thu_original.png"><img class="picture" src="images/xiaoyu_qin_thu.jpg" alt="Xiaoyu QIN" text-align:center  align="right" height="20%" width="20%" style="margin:-110px 10px;border:2px solid #090909" height="20%" width="20%"/></a>
+        <table cellpadding="10" width="100%">
+          <tr>
+            <td>
+              <div><font size="4.75">Hello!&nbsp; </font> </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div> <font size="4.75"> 
+                I am a Postdoctoral Fellow at <a
+                  href="https://www.cs.tsinghua.edu.cn"><u>Department of Computer Science and Technology</u></a>, <a href="https://www.tsinghua.edu.cn"><u>Tsinghua University</u></a> (In cooperation with <a href="http://hcsi.cs.tsinghua.edu.cn/jiajia"><em><u>Prof Jia Jia</u></em></a>).
+              </font>
+              </div>
+            </td>
+          </tr>
+          <!-- <tr>
+            <td>
+              <div> <font size="4.75"> 
+                I am a PhD research student in Computer Science at <a
+                  href="https://www.birmingham.ac.uk/schools/computer-science/index.aspx"><u>School of Computer
+                    Science</u></a>, <a href="https://www.birmingham.ac.uk/"><u>University of Birmingham</u></a>,
+                and supervised by <a href="https://www.cs.bham.ac.uk/~lehrepk/"><em><u>Prof Per Kristian
+                      Lehre</u></em></a> and
+                <a href="http://www.cs.bham.ac.uk/~axk"><em><u>Prof Ata Kaban</u></em></a>.
+              </font>
+              </div>
+            </td>
+          </tr> -->
+          <tr>
+            <td>
+              <div>
+                <font size="4.75"> Currently, I focus on the topic of <em>Human-AI Interaction</em>. 
+                </font>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div><font size="4.75"> 
+                My research interests include <em>Multimedia</em>, <em>Artificial Intelligence</em>, <em>Optimization</em> and their applications. My past research interests include <em>Theory of Evolutionary Algorithms</em>.
+              </font>
+            </div>
+            </td>
+          </tr>
+        </table>        
+      </section>
+    </div>
+
+    <div class="div-sect">
+      <section id="s_res">
+        <h1><i class="fa-solid fa-microscope"></i> Research&nbsp;&nbsp;
+          <a href="https://scholar.google.com/citations?user=3WLGlb4AAAAJ&hl=en" style="text-decoration: none;" target="_blank">
+            <img src="images/google-scholar-square.svg" width="22.5" height="22.5">
+          </a>
+          <a href="https://www.scopus.com/authid/detail.uri?authorId=57226014441" style="text-decoration: none;" target="_blank">
+            <img src="images/scopus.svg" width="23.5" height="23.5">
+          </a>
+          <a href="https://orcid.org/0000-0002-9720-3220" target="_blank">
+            <img src="images/orcid.svg" width="22.5" height="22.5">
+          </a>
+        </h1>
+        <table cellpadding="10" width="100%">
+          <tr>
+            <td nowrap="nowrap">
+              <div><strong>Human-AI Interaction & Multimedia </strong></div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <div class="image-container">
+                  <p class="text" style="display: inline;" > 
+                    &#10148 HarmoniVox: Painting Voices to Match the Avatar's Soul. 
+                  </p>
+                  <img class="image" src="images/paper-img/acmmm2025-harmonivox.jpg">
+                </div> 
+                (<em>Songtao Zhou</em>, <em>Xiaoyu Qin*</em>, <em>Yixuan Zhou</em>, <em>Qixin Wang</em>, <em>Zeyu Jin</em>, <em>Zixuan Wang</em>, <em>Zhiyong Wu</em> and <em>Jia Jia*</em>)
+                &zwnj;
+                To appear in Proceedings of the 33rd ACM International Conference on Multimedia (ACM MM '25). <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a> <a href=""><i class="fa-regular fa-file-lines"></i></a> <a href="https://harmonivox.github.io/harmonivox/"><i class="fa-solid fa-chalkboard-user"></i></a> </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <div class="image-container">
+                  <p class="text" style="display: inline;" > 
+                    &#10148 DEPO: Enhancing E-commerce Image Background Generation with Short Trajectory Direct Expected Preference Optimization. 
+                  </p>
+                  <img class="image" src="images/paper-img/acmmm2025-depo.jpg">
+                </div> 
+                (<em>Shikun Sun</em>, <em>Chengrui Wang</em>, <em>Min Zhou</em>, <em>Zixuan Wang</em>, <em>Xiaoyu Qin</em>, <em>Tiezheng Ge</em>, <em>Bo Zheng</em> and <em>Jia Jia*</em>)
+                &zwnj;
+                To appear in Proceedings of the 33rd ACM International Conference on Multimedia (ACM MM '25). <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a> <a href=""><i class="fa-regular fa-file-lines"></i></a> </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <div class="image-container">
+                  <p class="text" style="display: inline;" > 
+                    &#10148 V-CASS: Vision-context-aware Expressive Speech Synthesis for Enhancing User Understanding of Videos. 
+                  </p>
+                  <img class="image" src="images/paper-img/ijcnn2025-vcass-main.png">
+                </div> 
+                (<em>Qixin Wang</em>, <em> Songtao Zhou</em>, <em>Zeyu Jin</em>, <em>Chenglin Guo</em>, <em> Shikun Sun</em> and <em>Xiaoyu Qin*</em>)
+                &zwnj;
+                In Proceedings of the 2025 International Joint Conference on Neural Networks (IJCNN '25). <a href="https://vimeo.com/1095989244"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> <a href="https://www.arxiv.org/pdf/2506.16716"><i class="fa-regular fa-file-lines"></i></a></div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <div class="image-container">
+                  <p class="text" style="display: inline;" > 
+                    &#10148 Minimal Impact ControlNet: Advancing Multi-ControlNet Integration. 
+                  </p>
+                  <img class="image" src="images/paper-img/icrl2025-minimal.jpg">
+                </div> 
+                (<em>Shikun Sun</em>, <em>Min Zhou</em>, <em>Zixuan Wang</em>, <em>Xubin Li</em>, <em>Tiezheng Ge</em>, <em>Zijie Ye</em>, <em>Xiaoyu Qin*</em>, <em>Junliang Xing</em>, <em>Bo Zheng</em> and <em>Jia Jia*</em>)
+                &zwnj;
+                In Proceedings of the 13th International Conference on Learning Representations (ICLR '25). <a href="https://iclr.cc/virtual/2025/poster/28156"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> <a href="https://openreview.net/forum?id=rzbSNDXgGD"><i class="fa-regular fa-file-lines"></i></a></div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <div class="image-container">
+                  <p class="text" style="display: inline;" > 
+                    &#10148 VoxInstruct: Expressive Human Instruction-to-Speech Generation with Unified Multilingual Codec Language Modelling. 
+                  </p>
+                  <img class="image" src="images/paper-img/acmmm2024-voxinstruct.png">
+                </div> 
+                (<em>Yixuan Zhou&#8224;</em>, <em>Xiaoyu Qin&#8224;</em>, <em>Zeyu Jin</em>, <em>Shuoyi Zhou</em>, <em>Shun Lei</em>, <em>Songtao Zhou</em>, <em>Zhiyong Wu*</em> and <em>Jia Jia*</em>)
+                <div class="wrap">
+                  <div class="help-tip">
+                    <p>&#8224;: Equal contribution <br>*: Corresponding authors.</p> 
+                  </div> 
+                </div> 
+                &zwnj;
+                In Proceedings of the 32nd ACM International Conference on Multimedia (ACM MM '24, Oral). <a href="https://dl.acm.org/doi/abs/10.1145/3664647.3681680"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> <a href="https://www.arxiv.org/pdf/2408.15676"><i class="fa-regular fa-file-lines"></i></a> <a href="https://voxinstruct.github.io/VoxInstruct/"><i class="fa-solid fa-chalkboard-user"></i></a> </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <div class="image-container">
+                  <p class="text" style="display: inline;" > 
+                    &#10148 SpeechCraft: A Fine-Grained Expressive Speech Dataset with Natural Language Description. 
+                  </p>
+                  <img class="image" src="images/paper-img/acmmm2024-speechcraft.png">
+                </div> 
+                (<em>Zeyu Jin</em>, <em>Jia Jia</em>, <em>Qixin Wang</em>, <em>Kehan Li</em>, <em>Shuoyi Zhou</em>, <em>Songtao Zhou</em>, <em>Xiaoyu Qin*</em> and <em>Zhiyong Wu*</em>)
+                &zwnj;
+                In Proceedings of the 32nd ACM International Conference on Multimedia (ACM MM '24). <a href="https://dl.acm.org/doi/abs/10.1145/3664647.3681674"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> <a href="https://arxiv.org/pdf/2408.13608"><i class="fa-regular fa-file-lines"></i></a> <a href="https://speechcraft2024.github.io/speechcraft2024/"><i class="fa-solid fa-chalkboard-user"></i></a> </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <div class="image-container">
+                  <p class="text" style="display: inline;" > 
+                    &#10148 DanceCamAnimator: Keyframe-Based Controllable 3D Dance Camera Synthesis. 
+                  </p>
+                  <img class="image" src="images/paper-img/acmmm2024-dancecamanimator.png">
+                </div> 
+                (<em>Zixuan Wang</em>, <em>Jiayi Li</em>, <em>Xiaoyu Qin</em>, <em>Shikun Sun</em>, <em>Songtao Zhou</em>, <em>Jia Jia*</em> and <em>Jiebo Luo*</em>)
+                &zwnj;
+                In Proceedings of the 32nd ACM International Conference on Multimedia (ACM MM '24). <a href="https://dl.acm.org/doi/abs/10.1145/3664647.3680980"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> <a href="https://arxiv.org/pdf/2409.14925"><i class="fa-regular fa-file-lines"></i></a> <a href="https://carmenw1203.github.io/DanceCamAnimator.github.io/"><i class="fa-solid fa-chalkboard-user"></i></a> </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <div class="image-container">
+                  <p class="text" style="display: inline;" > 
+                    &#10148 PlacidDreamer: Advancing Harmony in Text-to-3D Generation. 
+                  </p>
+                  <img class="image" src="images/paper-img/acmmm2024-placiddreamer.png">
+                </div> 
+                (<em>Shuo Huang</em>, <em>Shikun Sun</em>, <em>Zixuan Wang</em>, <em>Xiaoyu Qin</em>, <em>Yanmin Xiong</em>, <em>Yuan Zhang</em>, <em>Pengfei Wan</em>, <em>Di Zhang</em> and <em>Jia Jia*</em>)
+                &zwnj;
+                In Proceedings of the 32nd ACM International Conference on Multimedia (ACM MM '24). <a href="https://dl.acm.org/doi/abs/10.1145/3664647.3681276"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> <a href="https://arxiv.org/pdf/2407.13976"><i class="fa-regular fa-file-lines"></i></a> <a href="https://github.com/HansenHuang0823/PlacidDreamer"><i class="fa-solid fa-chalkboard-user"></i></a> </div>
+            </td> 
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <div class="image-container">
+                  <p class="text" style="display: inline;" > 
+                    &#10148 Realistic Full-Body Motion Generation from Sparse Tracking with State Space Model. 
+                  </p>
+                  <img class="image" src="images/paper-img/acmmm2024-motiongeneration.png">
+                </div> 
+                (<em>Kun Dong</em>, <em>Jian Xue</em>, <em>Zehai Niu</em>, <em>Xing Lan</em>, <em>Ke Lv</em>, <em>Qingyuan Liu</em> and <em>Xiaoyu Qin</em>)
+                &zwnj;
+                In Proceedings of the 32nd ACM International Conference on Multimedia (ACM MM '24, Oral). <a href="https://dl.acm.org/doi/abs/10.1145/3664647.3681013"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> <a href=""><i class="fa-solid fa-chalkboard-user"></i></a> </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <div class="image-container">
+                  <p class="text" style="display: inline;" > 
+                    &#10148 From Method to Application: A Review of Deep 3D Human Motion Capture. 
+                  </p>
+                  <img class="image" src="images/paper-img/tcsvt2024-review-3d.png">
+                </div> 
+                (<em>Zehai Niu</em>, <em>Ke Lv</em>, <em>Jian Xue*</em>, <em>Xiaoyu Qin</em>, <em>Jinbao Wang</em> and <em>Ling Shao</em>)
+                &zwnj;
+                In IEEE Transactions on Circuits and Systems for Video Technology (2024). <a href="https://doi.org/10.1109/TCSVT.2024.3423411"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+            </td>
+          </tr>
+        </tr>
+          <tr>
+            <td nowrap="nowrap">
+              <div><strong>Evolutionary Computation & Optimisation</strong></div>
+            </td>
+            <tr>
+              <td>
+                <div>
+                  <div class="image-container">
+                    <p class="text" style="display: inline;" > 
+                      &#10148 Empirical Evaluation of Evolutionary Algorithms with Power-Law Ranking Selection.
+                    </p>
+                    <img class="image" src="images/paper-img/iip2024-fast-sqrt.png">
+                  </div> 
+                  (with <em>Duc-Cuong Dang</em> and <em>Anton Eremeev</em>)
+                  <div class="wrap">
+                    <div class="help-tip">
+                      <p>Following the convention of Theoretical Computer Science that the co-authors are listed in <i>Alphabetical Order</i>.</p> 
+                    </div> 
+                  </div> 
+                  &zwnj;
+                  In Intelligent Information Processing XII (IIP '24). <a href="https://doi.org/10.1007/978-3-031-57808-3_16"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div>
+                  <div class="image-container">
+                    <p class="text" style="display: inline;" > 
+                      &#10148 Optimizing Chance-Constrained Submodular Problems with Variable Uncertainties. 
+                    </p>
+                    <img class="image" src="images/paper-img/ecai-2023-dmc.jpg">
+                  </div> 
+                  (<em>Xiankun Yan*</em>, <em>Anh Viet Do</em>, <em>Feng Shi</em>, <em>Xiaoyu Qin</em> and <em>Frank Neumann</em>)
+                  &zwnj;
+                  In Proceedings of the 26th European Conference on Artificial Intelligence (ECAI '23). <a href="https://ebooks.iospress.nl/volumearticle/64526"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div>
+                  <div class="image-container">
+                    <p class="text" style="display: inline;" > 
+                      &#10148 Self-adaptation Can Improve the Noise-tolerance of Evolutionary Algorithms. 
+                    </p>
+                    <img class="image" src="images/paper-img/foga2023-self-noise-results_lo_ob_fvsmr_sac.png">
+                  </div> 
+                  (with <em>Per Kristian Lehre</em>)
+                  <div class="wrap">
+                    <div class="help-tip">
+                      <p>Following the convention of Theoretical Computer Science that the co-authors are listed in <i>Alphabetical Order</i>.</p> 
+                    </div> 
+                  </div> 
+                  &zwnj;
+                  In Proceedings of the 17th ACM/SIGEVO Conference on Foundations of Genetic Algorithms (FOGA '23). <a href="https://doi.org/10.1145/3594805.3607128"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> <a href="Slides/poster-foga23-selfadapt-noise.pdf"> <i class="fa-solid fa-chalkboard-user"></i></a></div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div>
+                  <div class="image-container">
+                    <p class="text" style="display: inline;" > 
+                      &#10148 Self-adaptation Can Help Evolutionary Algorithms Track Dynamic Optima. 
+                    </p>
+                    <img class="image" src="images/paper-img/gecco2023-self-dynamic-illu_dmf_saea_proof_idea.png">
+                  </div> 
+                  (with <em>Per Kristian Lehre</em>)
+                  <div class="wrap">
+                    <div class="help-tip">
+                      <p>Following the convention of Theoretical Computer Science that the co-authors are listed in <i>Alphabetical Order</i>.</p> 
+                    </div> 
+                  </div> 
+                  &zwnj;
+                  In Proceedings of the Genetic and
+                  Evolutionary Computation Conference 2023 (GECCO '23). <a href="https://doi.org/10.1145/3583131.3590494"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> <a href="Papers/gecco2023-selfadapt-dynamic.pdf"><i class="fa-regular fa-file-lines"></i></a> <a href="Slides/slides-gecco23-selfadapt-dynamic.pdf"><i class="fa-solid fa-chalkboard-user"></i></div>
+                  <!-- <a href="https://doi.org/10.1007/978-3-031-14714-2_22"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> <a href="Slides/poster-ppsn22-mosaea-lehre-qin.pdf" target="_blank"><i class="fa-solid fa-chalkboard-user"></i></a> -->
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div>
+                  <div class="image-container">
+                    <p class="text" style="display: inline;" > &#10148 More Precise Runtime
+                      Analyses of Non-elitist Evolutionary Algorithms in Uncertain Environments.</p>
+                    <img class="image" src="images/paper-img/algo2022-noise-main-thm.png">
+                  </div> 
+                  (with <em>Per Kristian Lehre</em>)
+                  <div class="wrap">
+                    <div class="help-tip">
+                      <p>Following the convention of Theoretical Computer Science that the co-authors are listed in <i>Alphabetical Order</i>.</p> 
+                    </div> 
+                  </div> 
+                  &zwnj; In the Algorithmica (2024). <a href="https://link.springer.com/article/10.1007/s00453-022-01044-5"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div>
+                  <div class="image-container">
+                    <p class="text" style="display: inline;" > 
+                      &#10148 Self-adaptation via Multi-objectivisation: An Empirical Study. 
+                    </p>
+                    <img class="image" src="images/paper-img/ppsn2022-mosaea-results_nk_ppsn.png">
+                  </div> 
+                  (<em>Xiaoyu Qin</em> and <em>Per Kristian Lehre</em>) In the
+                  Parallel Problem Solving from Nature XVII (PPSN '22). <a href="https://doi.org/10.1007/978-3-031-14714-2_22"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> <a href="Papers/ppsn2022-mosaea.pdf"><i class="fa-regular fa-file-lines"></i></a> <a href="https://github.com/ChengCheng-Qin/mosa-ea"><i class="fa-solid fa-laptop-code"></i></a> <a href="Slides/poster-ppsn22-mosaea-lehre-qin.pdf"><i class="fa-solid fa-chalkboard-user"></i></a></div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div>
+                  <div class="image-container">
+                    <p class="text" style="display: inline;" > 
+                      &#10148 Self-adaptation via Multi-objectivisation: A Theoretical Study. 
+                    </p>
+                    <img class="image" src="images/paper-img/gecco2022-mosaea-illustra_mosaea_sparselocalopt.png">
+                  </div> 
+                  (with <em>Per Kristian Lehre</em>)
+                  <div class="wrap">
+                    <div class="help-tip">
+                      <p>Following the convention of Theoretical Computer Science that the co-authors are listed in <i>Alphabetical Order</i>.</p> 
+                    </div> 
+                  </div> 
+                  &zwnj;
+                  In Proceedings of the Genetic and
+                    Evolutionary Computation Conference 2022 (GECCO '22). <a href="https://dl.acm.org/doi/10.1145/3512290.3528836"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> <a href="Papers/gecco2022-mosaea.pdf"><i class="fa-regular fa-file-lines"></i></a> <a href="https://github.com/ChengCheng-Qin/mosa-ea"><i class="fa-solid fa-laptop-code"></i></a> <a href="Slides/slides-gecco22-mosaea-lehre-qin.pdf"><i class="fa-solid fa-chalkboard-user"></i></a></div>
+              </td>
+            </tr>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <div class="image-container">
+                  <p class="text" style="display: inline;" > 
+                    &#10148 Fast Non-elitist Evolutionary Algorithms with Power-law Ranking Selection.
+                  </p>
+                  <img class="image" src="images/paper-img/gecco2022-fast-sqrt_selection-embed.png">
+                </div> 
+                (with <em>Duc-Cuong Dang</em>, <em>Anton Eremeev</em> and <em>Per Kristian Lehre</em>)
+                <div class="wrap">
+                  <div class="help-tip">
+                    <p>Following the convention of Theoretical Computer Science that the co-authors are listed in <i>Alphabetical Order</i>.</p> 
+                  </div> 
+                </div> 
+                &zwnj;
+                In Proceedings of the Genetic and
+                  Evolutionary Computation Conference 2022 (GECCO '22). <a href="https://dl.acm.org/doi/10.1145/3512290.3528873"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> <a href="http://pure-oai.bham.ac.uk/ws/portalfiles/portal/169522247/pap584s3_file1.pdf"><i class="fa-regular fa-file-lines"></i></a></div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <div class="image-container">
+                  <p class="text" style="display: inline;" > 
+                    &#10148 More Precise Runtime
+                    Analyses of Non-elitist EAs in Uncertain Environments.
+                  </p>
+                  <img class="image" src="images/paper-img/gecco2021-noise-c2-condition.png">
+                </div>  
+                (with <em>Per Kristian Lehre</em>) 
+                <div class="wrap">
+                  <div class="help-tip">
+                    <p>Following the convention of Theoretical Computer Science that the co-authors are listed in <i>Alphabetical Order</i>.</p> 
+                  </div> 
+                </div> 
+                &zwnj;
+                In Proceedings of the Genetic and
+                  Evolutionary Computation Conference 2021 (GECCO '21). <a href="https://doi.org/10.1145/3449639.3459312"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> <a href="Papers/gecco2021-uncertain.pdf" target="_blank"><i class="fa-regular fa-file-lines"></i></a> <a href="Slides/slides-gecco21-more-lehre-qin.pdf"
+                    target="_blank"><i class="fa-solid fa-chalkboard-user"></i></a></div>
+            </td>
+          </tr>
+        </table>        
+      </section>
+    </div>
+
+    <div class="div-sect">
+      <section id="s_act">
+        <h1><i class="fa-solid fa-users"></i> Activities&nbsp; <button class="custom-button" onclick="showMoreRows()"><i class="fa-solid fa-circle-chevron-down"></i></button></h1>
+        <table cellpadding="10" width="100%" align="right">
+          <tr class="visible-row">
+            <td width="7%" nowrap="nowrap">
+              <div><strong>30 Jun. - 05 Jul. 2025</strong></div>
+            </td>
+            <td>
+              <div>
+                Physically attending <a href="https://2025.ijcnn.org" target="_blank">2025 International Joint Conference on Neural Networks (IJCNN)</a> in Rome, Italy.
+              </div>
+            </td>
+          </tr>
+          <tr class="visible-row">
+            <td width="7%" nowrap="nowrap">
+              <div><strong>30 May 2025</strong></div>
+            </td>
+            <td>
+              <div>
+                Playing a part in organizing the <a href="https://mp.weixin.qq.com/s/-TzlMLov1qZpb_F5PWnj_Q" target="_blank">清华大学基础模型中心基础模型2025学术年会 Tsinghua 2025 Foundation Model Conference</a> and giving a talk on <em>Multimodal Fusion Interaction Technology for Large Language Models</em> in Beijing, China.
+              </div>
+            </td>
+          </tr>
+          <tr class="visible-row">
+            <td width="7%" nowrap="nowrap">
+              <div><strong>19 May 2025</strong></div>
+            </td>
+            <td>
+              <div>
+                Serving as the secretary for the doctoral defense committee, congratulations to <a href="https://abcyzj.github.io">Dr Zijie Ye</a> from Tsinghua University for successfully passing their defenses.
+              </div>
+            </td>
+          </tr>
+          <tr class="visible-row">
+            <td width="7%" nowrap="nowrap">
+              <div><strong>24-28 Apr. 2025</strong></div>
+            </td>
+            <td>
+              <div>
+                Physically attending <a href="https://iclr.cc/"> the 13th ACM International Conference on Learning Representations (ICLR)</a> in Singapore.
+              </div>
+            </td>
+          </tr>
+          <tr class="hidden-row">
+            <td width="7%" nowrap="nowrap">
+              <div><strong>02-06 Dec. 2024</strong></div>
+            </td>
+            <td>
+              <div>
+                Invited and physically attending <a href="https://next-events.github.io/workshop-dec-2024/" target="_blank"> the NExT Singapore Workshop 2024 </a> and giving a talk on <em>Intelligence, and Trustworthy Human-AI Interaction for Advancing LLMs Toward AGI</em> in Singapore.
+              </div>
+            </td>
+          </tr>
+          <tr class="hidden-row">
+            <td width="7%" nowrap="nowrap">
+              <div><strong>28 Oct. - 01 Nov. 2024</strong></div>
+            </td>
+            <td>
+              <div>
+                Physically attending <a href="https://2024.acmmm.org/" target="_blank"> the 32nd ACM International Conference on Multimedia (ACM Multimedia) </a> in Melbourne, Australia.
+              </div>
+            </td>
+          </tr>
+          <tr class="hidden-row">
+            <td width="7%" nowrap="nowrap">
+              <div><strong>24-26 Oct. 2024</strong></div>
+            </td>
+            <td>
+              <div>
+                Physically attending <a href="https://ccf.org.cn/cncc2024" target="_blank">中国计算机大会 China National Computer Conference (CNCC) 2024</a> in Hengdian, China.
+              </div>
+            </td>
+          </tr>
+          <tr class="hidden-row">
+            <td width="7%" nowrap="nowrap">
+              <div><strong>15-18 Aug. 2024</strong></div>
+            </td>
+            <td>
+              <div>
+                Physically attending <a href="http://www.ncmmsc.org.cn" target="_blank">第十九届全国人机语音通讯学术会议 National Conference on Man-Machine Speech Communication (NCMMSC)</a> in Urumqi, China, honored to be elected as an executive committee member of the <a href="https://www.ccf.org.cn" target="_blank">China Computer Federation</a>, <a href="https://www.ccf.org.cn/Chapters/TC/TC_Listing/TCSDAP/" target="_blank">Technical Committee on Speech Dialogue and Auditory Processing</a> (CCF TCSDAP).
+              </div>
+            </td>
+          </tr>
+          <tr class="hidden-row">
+            <td width="7%" nowrap="nowrap">
+              <div><strong>19 Jun. 2024</strong></div>
+            </td>
+            <td>
+              <div>
+                Organizing <a href="https://mp.weixin.qq.com/s/8_rMvqfdhrixk9syudG97Q">清华大学基础模型中心系列讲座第16期 The 16th series talk in Foundation Model Research Center at Tsinghua University</a>, featuring talks by <a href="https://www.cs.bham.ac.uk/~lehrepk/">Prof Per Kristian Lehre</a>, <a href="https://www.linkedin.com/in/mo-zhang-phd-engineering/">Dr Mo Zhang</a>, <a href="https://lss1242.github.io">Shishen Lin</a> and <a href="https://www.linkedin.com/in/thinkwee/">Wei Liu</a>.
+              </div>
+            </td>
+          </tr>
+          <tr class="hidden-row">
+            <td width="7%" nowrap="nowrap">
+              <div><strong>21 May 2024</strong></div>
+            </td>
+            <td>
+              <div>
+                Serving as the secretary for the doctoral defense committee, congratulations to Dr Jingbei Li and Dr Haozhe Wu from Tsinghua University for successfully passing their defenses.
+              </div>
+            </td>
+          </tr>
+          <tr class="hidden-row">
+            <td width="7%" nowrap="nowrap">
+              <div><strong>17 Apr. 2024</strong></div>
+            </td>
+            <td>
+              <div>
+                Visiting <a href="http://www.lamda.nju.edu.cn/qianc/">Prof Qian Chao</a>'s research group at <a href="https://www.nju.edu.cn">Nanjing University</a>, China, alongside <a href="https://www.cs.bham.ac.uk/~lehrepk/">Prof Per Kristian Lehre</a>.
+              </div>
+            </td>
+          </tr>
+          <tr class="hidden-row">
+            <td width="7%" nowrap="nowrap">
+              <div><strong>18 Jan. 2024</strong></div>
+            </td>
+            <td>
+              <div>
+                Playing a part in organizing the <a href="https://mp.weixin.qq.com/s/aiEM79tLU9mxKuVFRGUiHQ" target="_blank">清华大学基础模型中心基础模型2023学术年会 Tsinghua 2023 Foundation Model Conference</a> and giving a talk on <em>Speech Foundation Models with Personalized Expressive Capabilities</em> in Beijing, China.
+              </div>
+            </td>
+          </tr>
+          <tr class="hidden-row">
+            <td width="7%" nowrap="nowrap">
+              <div><strong>08-10 Dec. 2023</strong></div>
+            </td>
+            <td>
+              <div>
+                Physically attending <a href="http://www.ncmmsc.org.cn" target="_blank">第十八届全国人机语音通讯学术会议 National Conference on Man-Machine Speech Communication (NCMMSC)</a> in Suzhou, China.
+              </div>
+            </td>
+          </tr>
+          <tr class="hidden-row">
+            <td width="7%" nowrap="nowrap">
+              <div><strong>28 Nov. 2023</strong></div>
+            </td>
+            <td>
+              <div>
+                🚩 Completed the PhD study. Thesis: <em>Self-adaptive Parameter Control Mechanisms in Evolutionary Computation</em>. 
+                <a href="Papers/phd_thesis_2023_xiaoyu_qin.pdf" target="_blank"><i class="fa-regular fa-file-lines"></i></a>
+                <a href="Slides/slides_self_adaptation_in_ec_2023.pdf" target="_blank"><i class="fa-solid fa-chalkboard-user"></i></a>
+              </div>
+          </tr>
+          <tr class="hidden-row">
+            <td width="7%" nowrap="nowrap">
+              <div><strong>02 Nov. 2023</strong></div>
+            </td>
+            <td>
+              <div>
+                🚩 Passed PhD viva with minor modifications (Examiners: <a href="https://users.aber.ac.uk/thj10/" target="_blank">Thomas Jansen</a> and <a href="https://www.cs.bham.ac.uk/~pxt/" target="_blank">Peter Tino</a>, Chair: <a href="https://www.cs.bham.ac.uk/~minkull/" target="_blank">Leandro L. Minku</a>).
+              </div>
+            </td>
+          </tr>
+          <tr class="hidden-row">
+            <td width="7%" nowrap="nowrap">
+              <div><strong>26-28 Oct. 2023</strong></div>
+            </td>
+            <td>
+              <div>
+                Physically attending <a href="https://ccf.org.cn/cncc2023" target="_blank">中国计算机大会 China National Computer Conference (CNCC) 2023</a> in Shenyang, China.
+              </div>
+            </td>
+          </tr>
+          <tr class="hidden-row">
+            <td width="7%" nowrap="nowrap">
+              <div><strong>10 Sep. 2023</strong></div>
+            </td>
+            <td>
+              <div>
+                Physically attending <a href="https://mp.weixin.qq.com/s/4TrnttBPdjejqxtlhqDXZA" target="_blank">大模型研讨会 The Symposium on Large Language Models</a> in Beijing, China.
+              </div>
+            </td>
+          </tr>
+          <tr class="hidden-row">
+            <td width="7%" nowrap="nowrap">
+              <div><strong>15-19 Jul. 2023</strong></div>
+            </td>
+            <td>
+              <div>
+                Physically attending <a href="https://gecco-2023.sigevo.org" target="_blank">Genetic and Evolutionary Computation Conference (GECCO) 2023</a> and  serving as a volunteer in Lisbon, Portugal.
+              </div>
+            </td>
+          </tr>
+          <tr class="hidden-row">
+            <td width="7%" nowrap="nowrap">
+              <div><strong>13-14 Jun. 2023</strong></div>
+            </td>
+            <td>
+              <div>
+                Visting <a href="https://cs.sxu.edu.cn">School of Computer Science and Information Technology</a>, <a href="https://www.sxu.edu.cn">Shanxi
+                  University</a>, China, and giving a talk on <em>Self-adaptation in Evolutionary Computation</em>. 
+              </div>
+            </td>
+          </tr>
+          <tr class="hidden-row">
+            <td width="7%" nowrap="nowrap">
+              <div><strong>11 Jun. 2023</strong></div>
+            </td>
+            <td>
+              <div>
+                Physically attending the 9-th Chinese Workshop on Evolutionary Computation and Learning (ECOLE) in Shenzhen, China.
+              </div>
+            </td>
+          </tr>
+          <tr class="hidden-row">
+            <td width="7%" nowrap="nowrap">
+              <div><strong>30-31 May 2023</strong></div>
+            </td>
+            <td>
+              <div>
+                Visiting <a href="https://www.aber.ac.uk/en/cs/">Department of Computer Science</a>, <a href="https://www.aber.ac.uk/en/">Aberystwyth University</a>, UK.
+              </div>
+            </td>
+          </tr>
+          <tr class="hidden-row">
+            <td width="7%" nowrap="nowrap">
+              <div><strong>24-25 May 2023</strong></div>
+            </td>
+            <td>
+              <div>
+                Physically attending <a href="https://www.turing.ac.uk" target="_blank">Turing AI Fellowship Event</a> in London, UK.
+              </div>
+            </td>
+          </tr>
+          <tr class="hidden-row">
+            <td width="7%" nowrap="nowrap">
+              <div><strong>22 Mar. 2023</strong></div>
+            </td>
+            <td>
+              <div>
+                Giving a online talk on <em>Self-adaptation via Multi-objectivisation: Multi-Objective Self-Adaptive Evolutionary Algorithms (MOSA-EA)</em> at <a href="https://set.adelaide.edu.au/computer-and-mathematical-sciences/">School of Computer and Mathematical Sciences</a>, <a href="https://www.adelaide.edu.au">The University of Adelaide</a>, Australia. <a href="Slides/20230322-uoa-talk-mosaea.pdf" target="_blank"><i class="fa-solid fa-chalkboard-user"></i></a>
+              </div>
+            </td>
+          </tr>
+          <tr class="hidden-row">
+            <td width="7%" nowrap="nowrap">
+              <div><strong>07 Dec. 2022</strong></div>
+            </td>
+            <td>
+              <div>
+                Physically attending <a href="https://www.turing.ac.uk" target="_blank">AI Alan Turing Fellows Day</a> in Cambridge, UK.
+              </div>
+            </td>
+          </tr>
+          <tr class="hidden-row">
+            <td width="7%" nowrap="nowrap">
+              <div><strong>10-14 Sep. 2022</strong></div>
+            </td>
+            <td>
+              <div>
+                Physically attending <a href="https://ppsn2022.cs.tu-dortmund.de" target="_blank">the 17-th International Conference on Parallel Problem Solving from Nature (PPSN XVII)</a> in Dortmund, Germany.
+              </div>
+            </td>
+          </tr>
+          <tr class="hidden-row">
+            <td width="7%" nowrap="nowrap">
+              <div><strong>05 Sep. 2022</strong></div>
+            </td>
+            <td>
+              <div>
+                Virtually attending <a href="https://www.coseal.net/coseal-workshop-2022/" target="_blank">COnfiguration and SElection of ALgorithms (COSEAL) Workshop 2022</a>.
+              </div>
+            </td>
+          </tr>
+          <tr class="hidden-row">
+            <td width="7%" nowrap="nowrap">
+              <div><strong>09-13 Jul. 2022</strong></div>
+            </td>
+            <td>
+              <div>
+                Physically attending <a href="https://gecco-2022.sigevo.org" target="_blank">Genetic and Evolutionary Computation Conference (GECCO) 2022</a> in Boston, USA.
+              </div>
+            </td>
+          </tr>
+          <tr class="hidden-row">
+            <td width="7%" nowrap="nowrap">
+              <div><strong>26 May 2022</strong></div>
+            </td>
+            <td>
+              <div>
+                Visiting <a href="https://cse.csu.edu.cn">School of Computer Science and Engineering</a>, <a href="https://www.csu.edu.cn">Central South University</a>, China.
+              </div>
+            </td>
+          </tr>
+          <tr class="hidden-row">
+            <td width="7%" nowrap="nowrap">
+              <div><strong>23-26 Aug. 2021</strong></div>
+            </td>
+            <td>
+              <div>
+                Virtually attending <a href="https://sites.google.com/view/ss-ddaci/home?authuser=1">2021 IEEE CIS Summer School on Data-Driven Artificial/Computational Intelligence: Theory and Applications</a>.
+              </div>
+            </td>
+          </tr>
+          <tr class="hidden-row">
+            <td width="7%" nowrap="nowrap">
+              <div><strong>10-14 Jul. 2021</strong></div>
+            </td>
+            <td>
+              <div>
+                Virtually attending <a href="https://gecco-2021.sigevo.org" target="_blank">Genetic and Evolutionary Computation Conference (GECCO) 2021</a> in Lille, France.
+              </div>
+            </td>
+          </tr>
+          <tr class="hidden-row">
+            <td width="7%" nowrap="nowrap">
+              <div><strong>13 May 2021</strong></div>
+            </td>
+            <td>
+              <div>
+                Visiting <a href="https://cse.sustech.edu.cn">Department of Computer Science and Engineering</a>, <a href="https://www.sustech.edu.cn">Southern University of Science and Technology (SUSTech)</a>, China.
+              </div>
+            </td>
+          </tr>
+          <tr class="hidden-row">
+            <td width="7%" nowrap="nowrap">
+              <div><strong>21 Apr. 2021</strong></div>
+            </td>
+            <td>
+              <div>
+                Giving a talk on <em>Theory of Evolutionary Computation and Self-adaptive Evolutionary Algorithms</em> at <a href="https://www.sxu.edu.cn">Shanxi
+                  University</a>, China. <a href="Slides/20210421-sxu-presentation-ec.pdf" target="_blank"><i class="fa-solid fa-chalkboard-user"></i></a>
+              </div>
+            </td>
+          </tr>
+          <tr class="hidden-row">
+            <td width="7%" nowrap="nowrap">
+              <div><strong>18-12 Jul. 2020</strong></div>
+            </td>
+            <td>
+              <div>
+                Virtually attending <a href="https://gecco-2020.sigevo.org" target="_blank">Genetic and Evolutionary Computation Conference (GECCO) 2020</a> in Cancun, Mexico.
+              </div>
+            </td>
+          </tr>
+          <tr class="hidden-row">
+            <td width="7%" nowrap="nowrap">
+              <div><strong>03 Feb. 2020</strong></div>
+            </td>
+            <td>
+              <div>
+                🚩 Enrolling as a PhD student at <a href="https://www.birmingham.ac.uk"><u>University of Birmingham</u></a>, UK.
+              </div>
+            </td>
+          </tr>
+          <tr class="visible-row">
+            <td width="7%" nowrap="nowrap">
+              <div><strong>Before</strong></div>
+            </td>
+            <td>
+              <div>
+                &#183;&#183;&#183;&#183;&#183;&#183;
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+        </table>
+      </section>      
+    </div>
+    <div class="div-sect">
+      <section id="s_work">
+        <h1><i class="fa-solid fa-briefcase"></i> Work&nbsp;</h1>
+        <table cellpadding="10" width="100%">
+          <tr>
+            <td width="7%" nowrap="nowrap">
+              <div><strong>Mar. 2024 - Now</strong></div>
+            </td>
+            <td>
+              <div>
+                Postdoctoral Fellow
+                    at <a
+                    href="https://www.cs.tsinghua.edu.cn"><u>Department of Computer Science and Technology</u></a>, <a href="https://www.tsinghua.edu.cn"><u>Tsinghua University</u></a>, China
+              </div>
+            </td>
+          </tr>
+          <!-- <tr>
+            <td width="7%" nowrap="nowrap">
+              <div><strong>Aug. 2023 - Feb. 2024</strong></div>
+            </td>
+            <td>
+              <div>
+                Research Assistant
+                    at <a
+                    href="https://www.cs.tsinghua.edu.cn"><u>Department of Computer Science and Technology</u></a>, <a href="https://www.tsinghua.edu.cn"><u>Tsinghua University</u></a>, China
+              </div>
+            </td>
+          </tr> -->
+        </table>
+      </section>
+    </div>
+    <div class="div-sect">
+      <section id="s_edu">
+        <h1><i class="fa-solid fa-graduation-cap"></i> Education&nbsp;</h1>
+        <table cellpadding="10" width="100%">
+          <tr>
+            <td width="7%" nowrap="nowrap">
+              <div><strong>Feb. 2020 - Nov. 2023</strong></div>
+            </td>
+            <td>
+              <div>
+                <a
+                  href="https://www.birmingham.ac.uk/postgraduate/courses/research/computer-science/computer-science-phd.aspx"><u>PhD
+                    in Computer Science</u></a> at <a href="https://www.birmingham.ac.uk"><u>University of
+                    Birmingham</u></a>, UK (Supervisors: <a href="https://www.cs.bham.ac.uk/~lehrepk/"><em><u>Prof Per Kristian
+                      Lehre</u></em></a> and
+                <a href="http://www.cs.bham.ac.uk/~axk"><em><u>Prof Ata Kaban</u></em></a>,
+                PhD Thesis: <a href="Papers/phd_thesis_2023_xiaoyu_qin.pdf" target="_blank"><i class="fa-regular fa-file-lines"></i></a> 
+                <a href="Slides/slides_self_adaptation_in_ec_2023.pdf" target="_blank"><i class="fa-solid fa-chalkboard-user"></i></a>
+                <a href="http://etheses.bham.ac.uk//id/eprint/14436/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>)
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td width="7%" nowrap="nowrap">
+              <div><strong>Sep. 2018 - Sep. 2019</strong></div>
+            </td>
+            <td>
+              <div>
+                <a
+                  href="https://www.birmingham.ac.uk/postgraduate/courses/taught/computer-science/advanced-computer-science.aspx"><u>MSc
+                    in Advanced Computer Science</u></a> with Distinction at <a
+                  href="https://www.birmingham.ac.uk"><u>University of Birmingham</u></a>, UK (Supervisor: <a href="https://www.cs.bham.ac.uk/~lehrepk/"><em><u>Prof Per Kristian
+                    Lehre</u></em></a>)
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td width="7%" nowrap="nowrap">
+              <div><strong>Oct. 2017 - Jul. 2018</strong></div>
+            </td>
+            <td>
+              <div>
+                Visiting Student in <a
+                  href="https://www.lboro.ac.uk/study/undergraduate/courses/a-z/computer-science-bsc/"><u>Computer
+                    Science</u></a> at <a href="http://www.lboro.ac.uk"><u>Loughborough University</u></a>, UK
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td width="7%" nowrap="nowrap">
+              <div><strong>Sep. 2014 - Jul. 2018</strong></div>
+            </td>
+            <td>
+              <div>
+                <u>BEng in Computer
+                    Science and Technology</u>, Outstanding Graduate at <a href="https://www.sxu.edu.cn"><u>Shanxi
+                    University</u></a>, China
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td width="7%" nowrap="nowrap">
+              <div><strong>Jul. 2016 - Aug. 2016</strong></div>
+            </td>
+            <td>
+              <div>
+                Visiting Student at <a href="https://www.abdn.ac.uk"><u>University of Aberdeen</u></a>, UK
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td width="7%" nowrap="nowrap">
+              <div><strong>High School</strong></div>
+            </td>
+            <td>
+              <div>
+                Science Class at <a href="http://www.sxdxfz.cn/index"><u>The Affiliated High School of Shanxi
+                    University</u></a>, China
+              </div>
+            </td>
+          </tr>
+        </table>
+      </section>
+    </div>
+    <div class="div-sect">
+      <section id="s_teach">
+        <h1><i class="fa-solid fa-school"></i> Teaching&nbsp;</h1>
+        <table cellpadding="10" width="100%">
+          <tr>
+            <td width="12%" nowrap="nowrap">
+              <div><strong>Term</strong></div>
+            </td>
+            <td width="10%" nowrap="nowrap">
+              <div><strong>Module</strong></div>
+            </td>
+            <td width="2%" nowrap="nowrap">
+              <div><strong>Role</strong></div>
+            </td>
+            <td width="16%" nowrap="nowrap">
+              <div><strong>Place</strong></div>
+            </td>
+          </tr>
+          <tr>
+            <td nowrap="nowrap">Spring 2021-22</td>
+            <td><a href="https://www.cs.bham.ac.uk/internal/modules/2021/06-34190/"><u>AI &amp; ML</u></a></td>
+            <td>TA</td>
+            <td><a href="https://www.birmingham.ac.uk/"><u>University of Birmingham</u></a></td>
+          </tr>
+          <tr>
+            <td>Autumn 2021-22</td>
+            <td><a href="https://www.cs.bham.ac.uk/internal/modules/2021/06-32212"><u>Neural Computation</u></a></td>
+            <td>TA</td>
+            <td><a href="https://www.birmingham.ac.uk/"><u>University of Birmingham</u></a></td>
+          </tr>
+          <tr>
+            <td>Spring 2020-21</td>
+            <td><a href="https://www.cs.bham.ac.uk/internal/modules/2020/06-34190/"><u>AI &amp; ML</u></a></td>
+            <td>TA</td>
+            <td><a href="https://www.birmingham.ac.uk/"><u>University of Birmingham</u></a></td>
+          </tr>
+          <tr>
+            <td>Autumn 2020-21</td>
+            <td><a href="https://www.cs.bham.ac.uk/internal/modules/2020/06-32212/"><u>Neural Computation</u></a></td>
+            <td>TA</td>
+            <td><a href="https://www.birmingham.ac.uk/"><u>University of Birmingham</u></a></td>
+          </tr>
+        </table>
+      </section>
+    </div>
+    <div class="div-sect">
+      <section id="s_cont">
+        <h1><i class="fa-solid fa-address-card"></i> Contact&nbsp;</h1>
+        <table cellpadding="10" width="100%">
+          <tr>
+            <td width="23%" nowrap="nowrap">
+              <div><strong><i class="fa-regular fa-map"></i> Address: </strong></div>
+            </td>
+            <td><span>3-522, FIT Building,
+              Tsinghua University, Beijing,
+              10084, China. <a href="https://j.map.baidu.com/62/3nPJ"><u><i class="fa-solid fa-map-pin"></i></u></a></span></td>
+          </tr>
+          <tr>
+            <td>
+              <div><strong><i class="fa-regular fa-envelope"></i> Email: </strong></div>
+            </td>
+            <td>xyqin@tsinghua.edu.cn <a href="mailto:xyqin@tsinghua.edu.cn"><u><i class="fa-solid fa-share"></i></u></a></td>
+          </tr>
+          <tr>
+            <td  width="23%" nowrap="nowrap">
+              <div><strong><i class="fa-solid fa-bullhorn"></i> Social Media: </strong></div>
+            </td>
+            <td>
+              <a href="https://www.linkedin.com/in/xiaoyu-qin/"><i class="fa-brands fa-linkedin fa-lg"></i></a> &nbsp;
+              <a href="https://twitter.com/XySQin"><i class="fa-brands fa-square-twitter fa-lg"></i></a> &nbsp;
+              <a href="https://www.instagram.com/chengcheng_qin/"><i class="fa-brands fa-instagram-square fa-lg"></i></a> 
+            </td>
+          </tr>
+        </table>
+      </section>
+    </div>
+    <div class="div-sect">
+      <section id="s_tools">
+        <h1><i class="fa-solid fa-star"></i> Useful Sheets, Tools &amp; Links&nbsp;</h1>
+        <table cellpadding="10" width="100%">
+          <tr>
+            <td style="width:8%"nowrap="nowrap">
+              <div><strong><i class="fa-solid fa-calculator"></i> Math: </strong></div>
+            </td>
+            <td style="width:8%"><span><a href="http://www.lkozma.net/inequalities_cheat_sheet/ineq.pdf"
+                  target="_blank"><u>Useful Inequalities</u></a></span></td>
+            <td style="width:8%" width="12%"><span><a href="Document/tcs-cheat.pdf" target="_blank"><u>Theoretical Computer
+                    Science Cheat Sheet</u></a></span></td>
+          </tr>
+          <tr>
+            <td style="width:8%" nowrap="nowrap">
+              <div><strong> </strong></div>
+            </td>
+            <td style="width:8%"><a href="https://www.desmos.com/calculator" target="_blank"><u>Function Plotter
+                  2D</u></a></td>
+            <td style="width:8%"><a href="https://www.geogebra.org/3d?lang=en-GB" target="_blank"><u>Function Plotter
+                  3D</u></a></td>
+          </tr>
+          <tr>
+            <td style="width:8%" nowrap="nowrap">
+              <div><strong><i class="fa-regular fa-pen-to-square"></i> Writing: </strong></div>
+            </td>
+            <td style="width:8%"><a href="https://www.tablesgenerator.com" target="_blank"><u>Table Generator</u></a>
+            </td>
+            <td style="width:8%"><a href="https://app.uio.no/ifi/texcount/online.php"
+                target="_blank"><u>TeXcount</u></a></td>
+            <td style="width:8%"><a href="http://detexify.kirelabs.org/classify.html"
+                target="_blank"><u>Detexify</u></a></td>
+          </tr>
+          <tr>
+            <td style="width:8%" nowrap="nowrap">
+            </td>
+            <td style="width:8%"><a href="https://tug.ctan.org/info/symbols/comprehensive/symbols-a4.pdf"
+                target="_blank"><u>Symbol List (Comprehensive)</u></a></td>
+            <td style="width:8%"><a href="https://oed.com" target="_blank"><u>Oxford English Dictionary</u></a></td>
+            <td style="width:8%"><a href="http://www.phrasebank.manchester.ac.uk" target="_blank"><u>Academic
+                  Phrasebank</u></a></td>
+          </tr>
+          <tr>
+            <td style="width:8%" nowrap="nowrap">
+            </td>
+            <td style="width:8%"><a href="https://3142.nl/latex-diff/"
+                target="_blank"><u>Latex-Diff</u></a></td>
+            <td style="width:8%"></td>
+            <td style="width:8%"></td>
+          </tr>
+          <tr>
+            <td style="width:8%" nowrap="nowrap">
+              <div><strong><i class="fa-solid fa-chart-line"></i> Charting: </strong></div>
+            </td>
+            <td style="width:8%"><a href="https://github.com/matplotlib/cheatsheets/blob/master/README.md"
+                target="_blank"><u>matplotlib CheatSheets &amp; Handout</u></a></td>
+            <td style="width:8%"><a href="http://home.ustc.edu.cn/~pjer1316/img/cheatsheet_large.png"
+                target="_blank"><u>MATLAB Plot CheatSheet</u></a></td>
+          </tr>
+          <tr>
+            <td style="width:8%" nowrap="nowrap">
+              <div><strong><i class="fa-regular fa-newspaper"></i> Publicating: </strong></div>
+            </td>
+            <td style="width:8%"><a href="Document/ccf-conf-jour-2019.pdf" target="_blank"><u>CCF-List</u></a> by <a href="https://www.ccf.org.cn" target="_blank">CCF</a>
+            </td>
+            <td style="width:8%"><a href="https://www.core.edu.au/conference-portal" target="_blank"><u>CORE
+                  Rankings</u></a></td>
+            <td style="width:8%"><a href="https://ryojitanabe.github.io/ecconf/" target="_blank"><u>EC conferences</u></a></td>
+          </tr>
+          <tr>
+            <td style="width:8%" nowrap="nowrap">
+              <div></div>
+            </td>
+            <td style="width:8%"><a href="Document/TH-CPL-2019.pdf" target="_blank"><u>TH-CPL</u></a> by <a href="https://www.cs.tsinghua.edu.cn">CS</a>@<a href="https://www.tsinghua.edu.cn" target="_blank">THU</a>
+                  </td>
+          </tr>
+          <!-- <tr>
+            <td style="width:8%" nowrap="nowrap">
+              <div><strong><i class="fa-solid fa-link"></i> Links: </strong></div>
+            </td>
+            <td style="width:8%" nowrap="nowrap"><a href="https://zt-chen.github.io"><u><em>Zitai CHEN</em></u></a></td>
+            <td style="width:8%" nowrap="nowrap"><a href="https://www.cs.bham.ac.uk/~wxl885/"><u><em>Wei LI</em></u></a></td>
+            <td style="width:8%" nowrap="nowrap"><a href="http://cvprip.cs.usu.edu/xiankun-yan/"><u><em>Xiankun YAN</em></u></a></td>
+          </tr>
+          <tr>
+            <td style="width:8%">
+              <div></div>
+            </td>
+            <td style="width:8%" nowrap="nowrap"><a href="https://research.unimelb.edu.au/research-at-melbourne/priestley-scholars/current-projects/usable-security-of-medical-devices"><u><em>Mo ZHANG</em></u></a></td>
+            <td style="width:8%" nowrap="nowrap"><a href="http://yuqingdai.xyz/"><u><em>Yuqing DAI</em></u></a> </td>
+            <td style="width:8%" nowrap="nowrap"><a href="https://www.haotong.xyz"><u><em>Hao TONG</em></u></a> </td>
+          </tr>
+          <tr>
+            <td style="width:8%">
+              <div></div>
+            </td>
+            <td style="width:8%" nowrap="nowrap"><a href="https://xiao-chenguang.github.io"><u><em>Chenguang XIAO</em></u></a></td>
+            <td style="width:8%" nowrap="nowrap"><a href="https://lss1242.github.io"><u><em>Shishen LIN</em></u></a></td>
+          </tr> -->
+        </table>
+      <div style="width: 100%; max-width: 500px; margin: 5px auto; padding: 8px; text-align: center;">
+          <a href="http://www.clustrmaps.com/map/Chengcheng-qin.github.io" 
+            title="Visit tracker for Chengcheng-qin.github.io"
+            style="display: inline-block; transition: transform 0.3s ease;">
+              <img src="//www.clustrmaps.com/map_v2.png?d=t0SpNHGkZ8u23FRGmakfvTV4cGeo39p5wiUgdjmeTvc" 
+                  alt="访问量追踪地图" 
+                  style="max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);"
+                  loading="lazy">
+          </a>
+      </div>
+    </div>
+    <div class="div-sect">
+      <!-- <strong>Games: </strong> <a href="conwaysgame/index.html"><u>Conway's Game of Life</u></a>
+      <br><br> -->
+      <br><br>
+      <div class="site-footer-item">
+        <a href="#top">Back To Top</a> 
+      </div>
+    </div>
+  </div>
+  <div class="div-out"><center> <font color="white">&#169; Copyright 2020-2025 Xiaoyu QIN</font>  </center> </div>
+</body>

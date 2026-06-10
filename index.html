@@ -155,11 +155,48 @@
     </style>
   <style>
     body{
+      min-height: 100vh;
+      min-height: 100dvh;
+      isolation: isolate;
+      background-color: rgb(218, 226, 224);
+    }
+    body::before{
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      pointer-events: none;
+      background-color: rgb(218, 226, 224);
       background-image: url("images/aberystwyth_laptop.jpg"); 
       background-repeat: no-repeat;
-      background-attachment: fixed;
       background-size: cover;
       background-position: center center;
+    }
+    @media (max-width: 700px), (orientation: portrait) and (pointer: coarse){
+      body::before{
+        background-image: url("images/aberystwyth_mobile.jpg");
+        background-size: calc(100vw - 24px) auto;
+      }
+    }
+    @supports (width: 100dvw){
+      @media (max-width: 700px), (orientation: portrait) and (pointer: coarse){
+        body::before{
+          background-size: calc(100dvw - 24px) auto;
+        }
+      }
+    }
+    @media (orientation: landscape) and (pointer: coarse) and (max-width: 1000px){
+      body::before{
+        background-image: url("images/aberystwyth_laptop.jpg");
+        background-size: auto calc(100vh - 24px);
+      }
+    }
+    @supports (height: 100dvh){
+      @media (orientation: landscape) and (pointer: coarse) and (max-width: 1000px){
+        body::before{
+          background-size: auto calc(100dvh - 24px);
+        }
+      }
     }
     .div-all{
       border:2px solid rgb(0, 0, 0);
@@ -1341,7 +1378,7 @@
       <br><br>
       <div class="site-footer-item">
         <a href="#top">Back To Top</a> 
-        <p style="font-size: smaller; text-align: right; color: gray;"> 
+        <p style="font-size: smaller; line-height: 1.15; text-align: right; color: gray;"> 
             <a href="images/aberystwyth_original.jpg" style="color: gray; text-decoration: none;">The background photo</a> was taken at 
             <a href="https://www.google.com/maps?q=52.423623, -4.083141" target="_blank" style="color: gray; text-decoration: none;">
                 <em>52° 25' 25.032" N, 4° 4' 59.27" W</em>

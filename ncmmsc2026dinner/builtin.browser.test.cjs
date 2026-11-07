@@ -1,0 +1,9 @@
+const {chromium}=require('playwright');const assert=require('node:assert/strict');
+(async()=>{const b=await chromium.launch({channel:'chrome',headless:true});const p=await b.newPage();try{
+ await p.goto('http://127.0.0.1:8080');assert.equal(await p.locator('#fixed-count').innerText(),'660');assert.equal(await p.locator('#total, #import-csv, input[type=file]').count(),0);assert.match(await p.locator('#range-note').innerText(),/固定/);
+ await p.locator('#primary').click();const current=await p.evaluate(()=>JSON.parse(localStorage.getItem('ncmmsc2026.lottery.v1')).current);await p.reload();assert.deepEqual(await p.evaluate(()=>JSON.parse(localStorage.getItem('ncmmsc2026.lottery.v1')).current),current);await p.locator('#primary').click();assert.equal(await p.locator('.person-name').count(),0);
+ await p.locator('#reset').click();await p.locator('#confirm-reset').click();assert.equal(await p.locator('#remaining').innerText(),'660');
+ await p.evaluate(()=>localStorage.setItem('ncmmsc2026.lottery.v1',JSON.stringify(Lottery.initial())));await p.reload();assert.equal(await p.locator('#fixed-count').innerText(),'660');
+ await p.evaluate(()=>{const s=Lottery.start(Lottery.initial(),200,5);localStorage.setItem('ncmmsc2026.lottery.v1',JSON.stringify(s))});await p.reload();assert.ok(await p.locator('#primary').isDisabled());assert.equal(await p.locator('.number-card').count(),5);assert.match(await p.locator('#notice').innerText(),/其他号码池/);await p.locator('#reset').click();await p.locator('#confirm-reset').click();assert.equal(await p.locator('#remaining').innerText(),'660');assert.ok(await p.locator('#primary').isEnabled());
+ console.log('PASS default 660, no identity display, refresh, reset, idle migration and active legacy preservation');
+}finally{await b.close()}})().catch(e=>{console.error(e);process.exit(1)});

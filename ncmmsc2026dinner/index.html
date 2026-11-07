@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#071f55"><meta name="description" content="NCMMSC 2026 晚宴抽奖 · 每一个号码，都是今晚的惊喜">
+  <title>NCMMSC 2026 · 晚宴抽奖</title>
+  <link rel="icon" href="./mark.svg" type="image/svg+xml"><link rel="stylesheet" href="./styles.css">
+  <script defer src="./registration-ids.js"></script><script defer src="./core.js"></script><script defer src="./app.js"></script>
+</head>
+<body>
+<canvas id="atmosphere" aria-hidden="true"></canvas><div class="ambient-glow" aria-hidden="true"></div>
+<div class="app">
+  <header class="header">
+    <a class="brand" href="./" aria-label="NCMMSC 晚宴抽奖首页"><img src="./mark.svg" width="44" height="44" alt=""><span>NCMMSC <b>2026</b><small>INTELLIGENCE · INTERACTION · CONNECTION</small></span></a>
+    <div class="event-meta"><span>中国 · 横琴</span><i></i><span>2026.11.05 — 11.08</span></div>
+    <button id="fullscreen" class="quiet-button" aria-label="切换全屏">⛶ <span>全屏展示</span></button>
+  </header>
+  <section class="heading">
+    <div class="eyebrow"><span></span> THE 21ST NCMMSC · GALA NIGHT <span></span></div>
+    <h1>今夜，好运<span>共鸣</span></h1>
+    <p>第二十一届全国人机语音通讯学术会议 <span>／</span> 晚宴抽奖</p>
+  </section>
+  <main class="layout">
+    <aside class="panel settings">
+      <div class="panel-title"><span class="tiny-icon">⌘</span><h2>抽奖设置</h2><span class="en">SETUP</span></div>
+      <p class="pool-caption">固定抽奖池</p>
+      <div class="fixed-pool"><strong id="fixed-count">660</strong><span>位参会嘉宾</span></div>
+      <p id="range-note" class="field-note">内置 660 个注册号 · 仅名单内参与</p>
+      <div class="divider"></div>
+      <label for="added">本批新增名额 <span>K</span></label>
+      <div class="input-wrap"><input id="added" type="number" min="0" max="100000" value="5" inputmode="numeric"><span>人</span></div>
+      <p class="field-note">仅补抽时，新增名额填 0</p>
+      <div class="formula"><div><span>本次新增</span><b id="formula-added">5</b></div><div><span>上批待补</span><b class="gold" id="carry">0</b></div><div class="formula-total"><span>本批共抽取</span><strong><span id="requested">5</span><small> 人</small></strong></div></div>
+      <button id="draw-all" class="text-button" hidden>抽完剩余号码 →</button>
+      <div class="settings-bottom"><span class="status-dot"></span><span id="save-status">进度自动保存在本机</span></div>
+    </aside>
+    <section class="panel stage" aria-labelledby="stage-title">
+      <div class="stage-top"><span class="live-tag"><i></i> LUCKY DRAW</span><span id="batch-label">第 01 批</span></div>
+      <div class="stage-heading"><h2 id="stage-title">让幸运，在此刻发生</h2><p id="stage-subtitle">每一个号码，都是今晚的惊喜</p></div>
+      <div id="idle-art" class="idle-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div><div class="art-center"><span class="art-star">✧</span><strong>2026</strong><span class="art-label">A NIGHT TO REMEMBER</span></div><div class="waveform" id="waveform"></div></div>
+      <div id="numbers" class="numbers" aria-label="本批抽奖号码" hidden></div>
+      <div id="review-summary" class="review-summary" hidden></div>
+      <div class="stage-actions"><button id="primary" class="primary-button"><span>开始抽奖</span><span aria-hidden="true">↗</span></button><p id="action-note">点击开始，让幸运号码跃动起来</p></div>
+      <div id="notice" class="notice" role="status" aria-live="polite"></div>
+      <div class="stage-bottom"><span>随机抽取 · 不重复中奖</span><span>GOOD LUCK, EVERYONE</span></div>
+    </section>
+    <aside class="results">
+      <section class="panel pool-panel"><span>剩余可抽号码</span><div><strong id="remaining">660</strong><span> / <span id="pool-total">660</span></span></div><div class="pool-track"><i id="pool-bar"></i></div><small>愿每一份期待，都有回响。</small></section>
+      <details class="panel list-panel" open><summary><span><i class="list-dot winner-dot"></i>中奖名单</span><b id="winner-count">0</b><span class="chevron">⌄</span></summary><div id="winner-list" class="records"><div class="empty-list">静候今晚的幸运儿<span>幸运即将揭晓</span></div></div></details>
+      <details class="panel list-panel" open><summary><span><i class="list-dot absent-dot"></i>缺席排除名单</span><b id="absent-count">0</b><span class="chevron">⌄</span></summary><div id="absent-list" class="records"><div class="empty-list">暂无缺席记录<span>缺席名额将自动结转</span></div></div></details>
+    </aside>
+  </main>
+  <footer><span>NCMMSC 2026 <i>／</i> Towards a New Paradigm of Intelligent Interaction</span><button id="reset" class="text-button">↻ 重置整场</button></footer>
+</div>
+<dialog id="reset-dialog"><h2>重新开始整场抽奖？</h2><p>将清空所有中奖、缺席与批次记录，并恢复内置的 660 个注册号。此操作无法撤销。</p><div><button id="cancel-reset" class="quiet-button">保留记录</button><button id="confirm-reset" class="danger-button">清空并重新开始</button></div></dialog>
+<noscript>请启用 JavaScript 以使用抽奖网页。</noscript>
+</body></html>
